@@ -43,7 +43,7 @@ class UserRegistrationAPIView(APIView):
             print("token",token)
             uid=urlsafe_base64_encode(force_bytes(user.pk))
             print("uid",uid)
-            confirm_link = f"https://onlineschool-im71.onrender.com/api/users/activate/{uid}/{token}/"
+            confirm_link = f"https://scl-nine.vercel.app/api/users/activate/{uid}/{token}/"
             email_subject="Confirm Your Email"
             # Choose the email template based on user type
             if user.user_type == 'teacher':
