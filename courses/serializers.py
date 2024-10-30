@@ -8,7 +8,7 @@ class CourseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Course
-        fields = ['id', 'title', 'description', 'department', 'image_url', 'teacher', 'created_at', 'updated_at']
+        fields = ['id', 'title', 'price','description', 'department', 'image_url', 'teacher', 'created_at', 'updated_at']
 
     def create(self, validated_data):
         image_url = validated_data.pop('image_url', None)

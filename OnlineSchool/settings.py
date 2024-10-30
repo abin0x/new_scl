@@ -47,10 +47,17 @@ INSTALLED_APPS = [
     'reviews',
     'rest_framework.authtoken',
     "corsheaders",
+    'payments',
 ]
 LOGIN_URL="http://127.0.0.1:5500/login.html"
 
 AUTH_USER_MODEL = 'users.CustomUser'
+SITE_URL = "http://127.0.0.1:8000"
+
+
+# settings.py
+SSLCommerz_STORE_ID = 'abins671fc56b7ee72'
+SSLCommerz_STORE_PASS = 'abins671fc56b7ee72@ss'
 
 CSRF_TRUSTED_ORIGINS = [
     # 'http://127.0.0.1:5501', 

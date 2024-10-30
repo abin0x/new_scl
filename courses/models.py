@@ -8,6 +8,7 @@ class Course(models.Model):
     # image = models.ImageField(upload_to='courses/images/', null=True, blank=True)
     image_url = models.URLField(max_length=500, null=True, blank=True)
     teacher = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='courses', on_delete=models.CASCADE)
+    price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
 
