@@ -52,7 +52,7 @@ INSTALLED_APPS = [
 LOGIN_URL="http://127.0.0.1:5500/login.html"
 
 AUTH_USER_MODEL = 'users.CustomUser'
-SITE_URL = "http://127.0.0.1:8000"
+SITE_URL = "https://scl-nine.vercel.app/"
 
 
 # settings.py
